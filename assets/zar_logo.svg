@@ -1,9 +1,9 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256" role="img" aria-label="ZeroArchive (.zar) Icon">
   <defs>
-    <!-- High-contrast primary-inspired vivid colors (Sky-Blue -> Gold-Yellow -> Coral-Red) -->
+    <!-- High-contrast vivid colors (Emerald-Green -> Gold-Yellow -> Coral-Red) -->
     <linearGradient id="topFace" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#38BDF8"/>
-      <stop offset="100%" stop-color="#0284C7"/>
+      <stop offset="0%" stop-color="#34D399"/>
+      <stop offset="100%" stop-color="#059669"/>
     </linearGradient>
     <linearGradient id="midFace" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#FDE047"/>
@@ -38,13 +38,13 @@
     <rect x="14" y="96" width="228" height="68" rx="16" fill="#A16207"/>
     <rect x="14" y="90" width="228" height="64" rx="16" fill="url(#midFace)" stroke="#FFFFFF" stroke-opacity="0.35" stroke-width="2"/>
 
-    <!-- Top Sky-Blue Slab (y=18..92) -->
-    <rect x="14" y="24" width="228" height="68" rx="16" fill="#0369A1"/>
+    <!-- Top Emerald-Green Slab (y=18..92) -->
+    <rect x="14" y="24" width="228" height="68" rx="16" fill="#065F46"/>
     <rect x="14" y="18" width="228" height="64" rx="16" fill="url(#topFace)" stroke="#FFFFFF" stroke-opacity="0.38" stroke-width="2"/>
 
     <!-- Subtle V-open Zipper Backing at Top (y=18..90) -->
     <polygon points="94,18 118,18 128,78 138,18 162,18 153,90 103,90" fill="#0F172A" stroke="#334155" stroke-width="2.5" stroke-linejoin="round"/>
-    <polygon points="118,18 138,18 128,78" fill="#0369A1"/>
+    <polygon points="118,18 138,18 128,78" fill="#047857"/>
 
     <!-- Closed Vertical Zipper Backing Below Slider (y=90..236) -->
     <rect x="103" y="90" width="50" height="146" rx="6" fill="#0F172A" stroke="#334155" stroke-width="2.5"/>
