@@ -155,33 +155,6 @@ typedef struct ZarOptions {
 | `-8` | `ZAR_ERR_CANCELLED` | Cancelled by caller via progress callback |
 | `-99` | `ZAR_ERR_INTERNAL` | Unexpected internal error |
 
-### JSON Output Schema (`zar_list_contents`)
-
-```json
-{
-  "version": 1,
-  "algorithm": "zstd",
-  "level": 6,
-  "dict_size_mb": 16,
-  "solid_mode": true,
-  "encrypted_header": true,
-  "encrypted_payload": true,
-  "file_count": 2,
-  "empty_dirs": [],
-  "files": [
-    {
-      "path": "hello.txt",
-      "original_size": 5800,
-      "compressed_offset": 32,
-      "block_index": 0,
-      "blake3": "b1665215f0cb24c21c41c5b5ad5738acafb7ec8929433ea0db5f1dbe292105f6",
-      "modified_time": 1795696601,
-      "created_time": 1795696601
-    }
-  ]
-}
-```
-
 ---
 
 ## Security
