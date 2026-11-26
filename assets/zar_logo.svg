@@ -98,36 +98,38 @@
 
     <!-- ================= REALISTIC 3D ZIPPER WRAP ================= -->
     <g filter="url(#beltShadow)">
-      <!-- Subtle V-open Zipper Tape at Top (y=18..90) -->
-      <polygon points="94,18 118,18 128,78 138,18 162,18 153,90 103,90" fill="url(#zipTape)" stroke="#334155" stroke-width="1.5" stroke-linejoin="round"/>
-      <polygon points="118,18 138,18 128,78" fill="#064E3B"/>
+      <!-- Subtle V-open Zipper Tape at Top (flush at y=20..90) -->
+      <polygon points="94,20 119,20 128,78 137,20 162,20 153,90 103,90" fill="url(#zipTape)" stroke="#334155" stroke-width="1.5" stroke-linejoin="round"/>
+      <polygon points="119,20 137,20 128,78" fill="#064E3B"/>
 
-      <!-- Closed Vertical Zipper Tape (y=90..238) -->
-      <rect x="103" y="90" width="50" height="148" rx="4" fill="url(#zipTape)" stroke="#334155" stroke-width="1.5"/>
-      <!-- Stitched seams -->
-      <line x1="108" y1="93" x2="108" y2="234" stroke="#64748B" stroke-width="1.4" stroke-dasharray="3.5 3"/>
-      <line x1="148" y1="93" x2="148" y2="234" stroke="#64748B" stroke-width="1.4" stroke-dasharray="3.5 3"/>
+      <!-- Closed Vertical Zipper Tape (flush at y=90..236) -->
+      <rect x="103" y="90" width="50" height="146" rx="3" fill="url(#zipTape)" stroke="#334155" stroke-width="1.5"/>
+      <!-- Outer stitched seams (completely clear of zipper teeth) -->
+      <line x1="98"  y1="23" x2="106" y2="86" stroke="#64748B" stroke-width="1.4" stroke-dasharray="3.5 3"/>
+      <line x1="158" y1="23" x2="150" y2="86" stroke="#64748B" stroke-width="1.4" stroke-dasharray="3.5 3"/>
+      <line x1="107" y1="93" x2="107" y2="232" stroke="#64748B" stroke-width="1.4" stroke-dasharray="3.5 3"/>
+      <line x1="149" y1="93" x2="149" y2="232" stroke="#64748B" stroke-width="1.4" stroke-dasharray="3.5 3"/>
 
       <!-- Bottom Metal Stop -->
-      <rect x="110" y="231" width="36" height="5" rx="2" fill="url(#zipMetal)"/>
+      <rect x="110" y="230" width="36" height="5" rx="2" fill="url(#zipMetal)"/>
 
-      <!-- Interlocking Metallic Teeth -->
+      <!-- Interlocking Metallic Teeth (aligned to inner V-edges, clear of stitching) -->
       <g fill="url(#zipMetal)">
-        <rect x="101" y="24" width="14" height="5.5" rx="1.8" transform="rotate(-7 108 27)"/>
-        <rect x="103" y="37" width="14" height="5.5" rx="1.8" transform="rotate(-7 110 40)"/>
-        <rect x="105" y="50" width="14" height="5.5" rx="1.8" transform="rotate(-7 112 53)"/>
-        <rect x="107" y="63" width="14" height="5.5" rx="1.8" transform="rotate(-7 114 66)"/>
+        <rect x="108" y="24" width="13" height="5.5" rx="1.8" transform="rotate(-8 114.5 26.75)"/>
+        <rect x="110" y="37" width="13" height="5.5" rx="1.8" transform="rotate(-8 116.5 39.75)"/>
+        <rect x="112" y="50" width="13" height="5.5" rx="1.8" transform="rotate(-8 118.5 52.75)"/>
+        <rect x="114" y="63" width="13" height="5.5" rx="1.8" transform="rotate(-8 120.5 65.75)"/>
 
-        <rect x="141" y="24" width="14" height="5.5" rx="1.8" transform="rotate(7 148 27)"/>
-        <rect x="139" y="37" width="14" height="5.5" rx="1.8" transform="rotate(7 146 40)"/>
-        <rect x="137" y="50" width="14" height="5.5" rx="1.8" transform="rotate(7 144 53)"/>
-        <rect x="135" y="63" width="14" height="5.5" rx="1.8" transform="rotate(7 142 66)"/>
+        <rect x="135" y="24" width="13" height="5.5" rx="1.8" transform="rotate(8 141.5 26.75)"/>
+        <rect x="133" y="37" width="13" height="5.5" rx="1.8" transform="rotate(8 139.5 39.75)"/>
+        <rect x="131" y="50" width="13" height="5.5" rx="1.8" transform="rotate(8 137.5 52.75)"/>
+        <rect x="129" y="63" width="13" height="5.5" rx="1.8" transform="rotate(8 135.5 65.75)"/>
 
-        <rect x="112" y="186" width="15" height="6" rx="2"/>
-        <rect x="129" y="195" width="15" height="6" rx="2"/>
-        <rect x="112" y="204" width="15" height="6" rx="2"/>
-        <rect x="129" y="213" width="15" height="6" rx="2"/>
-        <rect x="112" y="222" width="15" height="6" rx="2"/>
+        <rect x="113" y="185" width="14" height="6" rx="2"/>
+        <rect x="129" y="194" width="14" height="6" rx="2"/>
+        <rect x="113" y="203" width="14" height="6" rx="2"/>
+        <rect x="129" y="212" width="14" height="6" rx="2"/>
+        <rect x="113" y="221" width="14" height="6" rx="2"/>
       </g>
 
       <!-- Sculpted 3D Metallic Slider & "Z" Pull-Tab -->
