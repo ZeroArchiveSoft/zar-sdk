@@ -10,7 +10,7 @@
 [![ABI](https://img.shields.io/badge/ABI-C99%20Shared%20Library-4F46E5?style=for-the-badge)](#api-reference)
 [![License](https://img.shields.io/badge/license-SDK%20Binary-0F172A?style=for-the-badge)](LICENSE)
 
-[Why `libzar`?](#why-libzar) • [Quick Start](#quick-start) • [Benchmarks](#benchmarks) • [API Reference](#api-reference) • [Security](#security)
+[Why `libzar`?](#why-libzar) • [Quick Start](#quick-start) • [API Reference](#api-reference) • [Security](#security)
 
 </div>
 
@@ -107,17 +107,6 @@ cc main.c -I./include -L./lib -lzar -Wl,-rpath,'$ORIGIN/lib' -o zar_app
 ```
 
 </details>
-
----
-
-## Benchmarks
-
-Real-world measurement on a **`1,051.20 MiB`** (`987` files) mixed-binary application directory:
-
-| Mode | Output Size | Compress Time | Speed | Integrity Verify |
-| :--- | :---: | :---: | :---: | :---: |
-| **Zstd** (`level 3`, `64 MB` parallel blocks) | `914.14 MiB` | **`8.55 s`** | **`122.95 MiB/s`** | **`0.27 s`** (`~3.8 GiB/s`) |
-| **LZMA2** (`level 3`, `32 MB` dict, `64 MB` parallel blocks) | **`869.77 MiB`** | `58.89 s` | `17.85 MiB/s` | **`1.84 s`** (`571 MiB/s`) |
 
 ---
 
