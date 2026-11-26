@@ -61,8 +61,7 @@ node examples/node_test.js
 </tr>
 </table>
 
-<details>
-<summary><b>C / C++ Integration Example (Click to expand)</b></summary>
+### C / C++ Integration Example
 
 ```c
 #include <stdio.h>
@@ -106,8 +105,6 @@ int main(void) {
 cc main.c -I./include -L./lib -lzar -Wl,-rpath,'$ORIGIN/lib' -o zar_app
 ```
 
-</details>
-
 ---
 
 ## API Reference
@@ -127,8 +124,7 @@ All symbols are declared in [`include/zar.h`](include/zar.h).
 | `zar_last_error()` | Returns thread-local error message for the last failed call (do not free). |
 | `zar_set_progress_callback(cb, user_data)` | Registers a thread-local progress & cancellation callback. |
 
-<details>
-<summary><b><code>ZarOptions</code> Struct & Field Reference</b></summary>
+### `ZarOptions` Struct
 
 ```c
 typedef struct ZarOptions {
@@ -144,10 +140,7 @@ typedef struct ZarOptions {
 } ZarOptions;
 ```
 
-</details>
-
-<details>
-<summary><b>Error Codes (<code>ZAR_OK</code> / <code>ZAR_ERR_*</code>)</b></summary>
+### Error Codes (`ZAR_OK` / `ZAR_ERR_*`)
 
 | Code | Constant | Meaning |
 | :---: | :--- | :--- |
@@ -162,10 +155,7 @@ typedef struct ZarOptions {
 | `-8` | `ZAR_ERR_CANCELLED` | Cancelled by caller via progress callback |
 | `-99` | `ZAR_ERR_INTERNAL` | Unexpected internal error |
 
-</details>
-
-<details>
-<summary><b>JSON Output Schema (<code>zar_list_contents</code>)</b></summary>
+### JSON Output Schema (`zar_list_contents`)
 
 ```json
 {
@@ -191,8 +181,6 @@ typedef struct ZarOptions {
   ]
 }
 ```
-
-</details>
 
 ---
 
