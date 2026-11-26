@@ -1,116 +1,89 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256" role="img" aria-label=".zar Archive Zipper Icon">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256" role="img" aria-label="ZeroArchive (.zar) Icon">
   <defs>
-    <!-- Top Rich Amber-Gold 3D Slab -->
+    <!-- High-contrast Windows-icon-ready vivid colors (Orange -> Cyan -> Violet) -->
     <linearGradient id="topFace" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#FCD34D"/>
-      <stop offset="50%" stop-color="#F59E0B"/>
-      <stop offset="100%" stop-color="#B45309"/>
+      <stop offset="0%" stop-color="#FFB800"/>
+      <stop offset="100%" stop-color="#EA580C"/>
     </linearGradient>
-    <linearGradient id="topEdge" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#92400E"/>
-      <stop offset="100%" stop-color="#451A03"/>
-    </linearGradient>
-
-    <!-- Middle Vibrant Electric-Cyan 3D Slab -->
     <linearGradient id="midFace" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#67E8F9"/>
-      <stop offset="50%" stop-color="#06B6D4"/>
-      <stop offset="100%" stop-color="#0E7490"/>
+      <stop offset="0%" stop-color="#22E5FF"/>
+      <stop offset="100%" stop-color="#0284C7"/>
     </linearGradient>
-    <linearGradient id="midEdge" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#155E75"/>
-      <stop offset="100%" stop-color="#083344"/>
-    </linearGradient>
-
-    <!-- Bottom Deep Royal-Indigo 3D Slab -->
     <linearGradient id="botFace" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#818CF8"/>
-      <stop offset="50%" stop-color="#4F46E5"/>
-      <stop offset="100%" stop-color="#3730A3"/>
-    </linearGradient>
-    <linearGradient id="botEdge" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#312E81"/>
-      <stop offset="100%" stop-color="#1E1B4B"/>
+      <stop offset="0%" stop-color="#C084FC"/>
+      <stop offset="100%" stop-color="#6D28D9"/>
     </linearGradient>
 
-    <!-- Brushed Titanium / Silver Zipper Metal -->
     <linearGradient id="zipMetal" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#94A3B8"/>
-      <stop offset="35%" stop-color="#F8FAFC"/>
-      <stop offset="70%" stop-color="#CBD5E1"/>
-      <stop offset="100%" stop-color="#64748B"/>
+      <stop offset="0%" stop-color="#CBD5E1"/>
+      <stop offset="45%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#94A3B8"/>
     </linearGradient>
 
-    <filter id="iconShadow" x="-12%" y="-10%" width="124%" height="128%">
-      <feDropShadow dx="0" dy="8" stdDeviation="7" flood-color="#020617" flood-opacity="0.32"/>
+    <filter id="iconShadow" x="-8%" y="-8%" width="116%" height="120%">
+      <feDropShadow dx="0" dy="5" stdDeviation="4" flood-color="#020617" flood-opacity="0.35"/>
     </filter>
-    <filter id="pullShadow" x="-20%" y="-15%" width="140%" height="140%">
-      <feDropShadow dx="0" dy="4" stdDeviation="3" flood-color="#020617" flood-opacity="0.45"/>
+    <filter id="pullShadow" x="-15%" y="-15%" width="130%" height="135%">
+      <feDropShadow dx="0" dy="3" stdDeviation="2.5" flood-color="#020617" flood-opacity="0.5"/>
     </filter>
   </defs>
 
+  <!-- Full-bleed geometry (x=14..242, y=18..238) for crisp 16px-256px Windows icons -->
   <g filter="url(#iconShadow)">
-    <!-- Bottom Slab (y=150..204, zero gap) -->
-    <rect x="32" y="156" width="192" height="48" rx="13" fill="url(#botEdge)"/>
-    <rect x="32" y="150" width="192" height="48" rx="13" fill="url(#botFace)"/>
-    <rect x="44" y="155" width="168" height="7" rx="3.5" fill="#FFFFFF" fill-opacity="0.22"/>
+    <!-- Bottom Violet Slab (y=162..236) -->
+    <rect x="14" y="168" width="228" height="68" rx="16" fill="#4C1D95"/>
+    <rect x="14" y="162" width="228" height="64" rx="16" fill="url(#botFace)" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="2"/>
 
-    <!-- Middle Slab (y=96..150, zero gap) -->
-    <rect x="32" y="102" width="192" height="48" rx="13" fill="url(#midEdge)"/>
-    <rect x="32" y="96" width="192" height="48" rx="13" fill="url(#midFace)"/>
-    <rect x="44" y="101" width="168" height="7" rx="3.5" fill="#FFFFFF" fill-opacity="0.24"/>
+    <!-- Middle Electric-Cyan Slab (y=90..164) -->
+    <rect x="14" y="96" width="228" height="68" rx="16" fill="#0369A1"/>
+    <rect x="14" y="90" width="228" height="64" rx="16" fill="url(#midFace)" stroke="#FFFFFF" stroke-opacity="0.32" stroke-width="2"/>
 
-    <!-- Top Slab (y=42..96, zero gap) -->
-    <rect x="32" y="48" width="192" height="48" rx="13" fill="url(#topEdge)"/>
-    <rect x="32" y="42" width="192" height="48" rx="13" fill="url(#topFace)"/>
-    <rect x="44" y="47" width="168" height="7" rx="3.5" fill="#FFFFFF" fill-opacity="0.28"/>
+    <!-- Top Vivid-Orange Slab (y=18..92) -->
+    <rect x="14" y="24" width="228" height="68" rx="16" fill="#9A3412"/>
+    <rect x="14" y="18" width="228" height="64" rx="16" fill="url(#topFace)" stroke="#FFFFFF" stroke-opacity="0.38" stroke-width="2"/>
 
-    <!-- Subtle Slight V-open Zipper Backing at Top (y=42..96) -->
-    <polygon points="101,42 120,42 128,88 136,42 155,42 148,96 108,96" fill="#0F172A" stroke="#334155" stroke-width="2" stroke-linejoin="round"/>
-    <!-- Narrow inner slit -->
-    <polygon points="120,42 136,42 128,88" fill="#92400E"/>
+    <!-- Subtle V-open Zipper Backing at Top (y=18..90) -->
+    <polygon points="94,18 118,18 128,78 138,18 162,18 153,90 103,90" fill="#0F172A" stroke="#334155" stroke-width="2.5" stroke-linejoin="round"/>
+    <polygon points="118,18 138,18 128,78" fill="#C2410C"/>
 
-    <!-- Closed Vertical Zipper Backing Below Slider (y=96..204) -->
-    <rect x="108" y="96" width="40" height="108" rx="4" fill="#0F172A" stroke="#334155" stroke-width="2"/>
-    <line x1="112" y1="100" x2="112" y2="199" stroke="#475569" stroke-width="1.2" stroke-dasharray="3 3"/>
-    <line x1="144" y1="100" x2="144" y2="199" stroke="#475569" stroke-width="1.2" stroke-dasharray="3 3"/>
+    <!-- Closed Vertical Zipper Backing Below Slider (y=90..236) -->
+    <rect x="103" y="90" width="50" height="146" rx="6" fill="#0F172A" stroke="#334155" stroke-width="2.5"/>
 
     <!-- Bottom Metal Zipper End-Stop -->
-    <rect x="113" y="200" width="30" height="4" rx="1.5" fill="url(#zipMetal)"/>
+    <rect x="109" y="229" width="38" height="6" rx="2" fill="url(#zipMetal)"/>
 
-    <!-- Subtle Open Teeth (Top, 7 deg tilt) -->
+    <!-- Bold Interlocking Zipper Teeth (high contrast for small icons) -->
     <g fill="url(#zipMetal)">
-      <!-- Left slight-angled teeth -->
-      <rect x="106" y="46" width="12" height="5" rx="1.8" transform="rotate(-7 112 48.5)"/>
-      <rect x="108" y="56" width="12" height="5" rx="1.8" transform="rotate(-7 114 58.5)"/>
-      <rect x="110" y="66" width="12" height="5" rx="1.8" transform="rotate(-7 116 68.5)"/>
-      <rect x="112" y="76" width="12" height="5" rx="1.8" transform="rotate(-7 118 78.5)"/>
+      <!-- Subtle angled top teeth (7 deg) -->
+      <rect x="101" y="24" width="14" height="6" rx="2" transform="rotate(-7 108 27)"/>
+      <rect x="103" y="37" width="14" height="6" rx="2" transform="rotate(-7 110 40)"/>
+      <rect x="105" y="50" width="14" height="6" rx="2" transform="rotate(-7 112 53)"/>
+      <rect x="107" y="63" width="14" height="6" rx="2" transform="rotate(-7 114 66)"/>
 
-      <!-- Right slight-angled teeth -->
-      <rect x="138" y="46" width="12" height="5" rx="1.8" transform="rotate(7 144 48.5)"/>
-      <rect x="136" y="56" width="12" height="5" rx="1.8" transform="rotate(7 142 58.5)"/>
-      <rect x="134" y="66" width="12" height="5" rx="1.8" transform="rotate(7 140 68.5)"/>
-      <rect x="132" y="76" width="12" height="5" rx="1.8" transform="rotate(7 138 78.5)"/>
+      <rect x="141" y="24" width="14" height="6" rx="2" transform="rotate(7 148 27)"/>
+      <rect x="139" y="37" width="14" height="6" rx="2" transform="rotate(7 146 40)"/>
+      <rect x="137" y="50" width="14" height="6" rx="2" transform="rotate(7 144 53)"/>
+      <rect x="135" y="63" width="14" height="6" rx="2" transform="rotate(7 142 66)"/>
 
-      <!-- Closed Interlocking Teeth Below Pull-Tab (y=163..197) -->
-      <rect x="115" y="164" width="13" height="5" rx="1.8"/>
-      <rect x="128" y="171" width="13" height="5" rx="1.8"/>
-      <rect x="115" y="178" width="13" height="5" rx="1.8"/>
-      <rect x="128" y="185" width="13" height="5" rx="1.8"/>
-      <rect x="115" y="192" width="13" height="5" rx="1.8"/>
+      <!-- Closed interlocking teeth below pull-tab (y=184..225) -->
+      <rect x="111" y="185" width="16" height="6.5" rx="2"/>
+      <rect x="129" y="194" width="16" height="6.5" rx="2"/>
+      <rect x="111" y="203" width="16" height="6.5" rx="2"/>
+      <rect x="129" y="212" width="16" height="6.5" rx="2"/>
+      <rect x="111" y="220" width="16" height="6.5" rx="2"/>
     </g>
 
-    <!-- Sculpted Zipper Slider & Pull-Tab -->
+    <!-- Bold Zipper Slider & "Z" Pull-Tab -->
     <g filter="url(#pullShadow)">
-      <path d="M104 93 C104 90 106 88 109 88 H147 C150 88 152 90 152 93 L148 112 C147 115 145 117 142 117 H114 C111 117 109 115 108 112 Z"
-            fill="url(#zipMetal)" stroke="#475569" stroke-width="1.8"/>
-      <rect x="120" y="100" width="16" height="12" rx="4" fill="#1E293B" stroke="#64748B" stroke-width="1.5"/>
-      <rect x="124" y="110" width="8" height="11" rx="3" fill="url(#zipMetal)"/>
+      <path d="M98 84 C98 80 101 77 105 77 H151 C155 77 158 80 158 84 L153 108 C152 112 149 114 145 114 H111 C107 114 104 112 103 108 Z"
+            fill="url(#zipMetal)" stroke="#334155" stroke-width="2.5"/>
+      <rect x="118" y="92" width="20" height="15" rx="4" fill="#0F172A" stroke="#64748B" stroke-width="2"/>
+      <rect x="123" y="104" width="10" height="14" rx="3" fill="url(#zipMetal)"/>
 
-      <!-- Tapered "Z" Pull-Tab -->
-      <rect x="107" y="118" width="42" height="43" rx="10" fill="#0F172A" stroke="url(#zipMetal)" stroke-width="3.5"/>
-      <path d="M118 129 H138 L118 150 H138"
-            fill="none" stroke="#38BDF8" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round"/>
+      <!-- Large High-Contrast "Z" Pull-Tab -->
+      <rect x="99" y="116" width="58" height="62" rx="12" fill="#0F172A" stroke="url(#zipMetal)" stroke-width="4.5"/>
+      <path d="M114 132 H142 L114 162 H142"
+            fill="none" stroke="#38BDF8" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
     </g>
   </g>
 </svg>
