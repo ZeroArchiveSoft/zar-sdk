@@ -31,14 +31,14 @@ extern "C" {
  * Archive Compression Options
  * ========================================================================== */
 typedef struct ZarOptions {
-    int32_t     algorithm;            /* ZAR_ALGO_LZMA2 (1) or ZAR_ALGO_ZSTD (2) */
-    int32_t     level;                /* Compression level: 1..9 (0 = default 6) */
+    int32_t     algorithm;            /* 0 = default (ZSTD), ZAR_ALGO_LZMA2 (1), ZAR_ALGO_ZSTD (2) */
+    int32_t     level;                /* Compression level: 1..9 (0 = default 5) */
     uint32_t    dict_size_mb;         /* Dictionary size in MB: 16..1024 (0 = default 16) */
     uint8_t     solid_mode;           /* 1 = enable solid compression, 0 = per-file */
     uint8_t     encrypt_header;       /* 1 = encrypt central directory, 0 = plaintext */
     uint8_t     encrypt_payload;      /* 1 = encrypt data blocks, 0 = plaintext */
     uint8_t     _reserved;            /* Must be 0 */
-    uint64_t    solid_block_size_mb;  /* Max MB per solid block (0 = single continuous block) */
+    uint64_t    solid_block_size_mb;  /* Max MB per solid block (0 = default/auto: 64MB parallel blocks) */
     const char* password;             /* UTF-8 password (NULL if encryption disabled) */
 } ZarOptions;
 
