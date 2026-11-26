@@ -1,0 +1,31 @@
+libzar Public SDK License
+========================
+
+Copyright (c) 2026 Zero-space Archive (.zar) Authors. All rights reserved.
+
+1. Compiled Binary (`lib/libzar.dll`, `lib/libzar.so`, `lib/libzar.dylib`)
+   Permission is hereby granted, free of charge, to any person or organization
+   obtaining a copy of the compiled `libzar` shared library and accompanying
+   documentation to use, link against, and redistribute the unmodified compiled
+   binary in commercial or non-commercial software, subject to the following
+   conditions:
+   - You may NOT reverse-engineer, decompile, disassemble, or attempt to derive
+     the underlying source code or proprietary internal algorithms of the
+     compiled `libzar` binary, except to the extent expressly permitted by
+     applicable law.
+   - The above copyright notice and this permission notice shall be included in
+     all copies or substantial portions of the SDK.
+
+2. Public Header & Examples (`include/zar.h`, `examples/*`)
+   The C header file (`include/zar.h`) and integration examples (`examples/*`)
+   may be freely copied, modified, and included in your projects without
+   restriction.
+
+3. Disclaimer
+   THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+   IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+   FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+   AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+   LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+   OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+   THE SOFTWARE.

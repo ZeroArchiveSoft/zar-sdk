@@ -1,0 +1,14 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+
+# Node.js
+node_modules/
+package-lock.json
+
+# Test archives & OS files
+*.zar
+*.tmp
+.DS_Store
+Thumbs.db
