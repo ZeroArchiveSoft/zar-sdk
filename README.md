@@ -31,7 +31,7 @@
 ### 1. Download / Clone
 
 ```bash
-git clone https://github.com/ZeroArchiveSDK/zar-sdk.git
+git clone https://github.com/ZeroArchiveSoft/zar-sdk.git
 cd zar-sdk
 ```
 
