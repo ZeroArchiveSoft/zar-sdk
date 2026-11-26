@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="assets/zar_logo.png" alt="ZeroArchive (.zar)" width="140" />
+<img src="assets/zar_logo.svg" alt="ZeroArchive (.zar)" width="128" />
 
 # ZeroArchive SDK (`libzar`)
 
