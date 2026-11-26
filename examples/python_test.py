@@ -66,7 +66,7 @@ def main() -> None:
         src_dir = os.path.join(work_dir, "input")
         os.makedirs(os.path.join(src_dir, "nested"), exist_ok=True)
         with open(os.path.join(src_dir, "hello.txt"), "wb") as f:
-            f.write(b"Hello from .zar Zero-space Archive!\n" * 200)
+            f.write(b"Hello from .zar ZeroArchive!\n" * 200)
         with open(os.path.join(src_dir, "nested", "data.bin"), "wb") as f:
             f.write(b"Repeated solid block pattern 1234567890\n" * 500)
 
@@ -103,7 +103,7 @@ def main() -> None:
         assert rc == 0, f"zar_extract failed with code {rc}"
 
         with open(os.path.join(extract_dir, "hello.txt"), "rb") as f:
-            assert f.read() == b"Hello from .zar Zero-space Archive!\n" * 200
+            assert f.read() == b"Hello from .zar ZeroArchive!\n" * 200
         with open(os.path.join(extract_dir, "nested", "data.bin"), "rb") as f:
             assert f.read() == b"Repeated solid block pattern 1234567890\n" * 500
 

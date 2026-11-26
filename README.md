@@ -1,10 +1,10 @@
 <p align="center">
-  <img src="assets/zar_logo.svg" alt=".zar Zero-space Archive Logo" width="140" />
+  <img src="assets/zar_logo.svg" alt=".zar ZeroArchive Logo" width="140" />
 </p>
 
 # `libzar` Public SDK (`v0.1.0`)
 
-**`libzar`** is the official cross-platform C-ABI Shared Library SDK for creating, inspecting, and extracting **`.zar` (Zero-space Archive)** files.
+**`libzar`** is the official cross-platform C-ABI Shared Library SDK for creating, inspecting, and extracting **`.zar` (ZeroArchive)** files.
 
 Designed for high compression ratios, fast metadata inspection, and cryptographic integrity, `libzar` exposes a minimal, memory-safe C99 interface that integrates seamlessly with **C / C++**, **Python (`ctypes`)**, **Node.js (`koffi`)**, **Go (`cgo`)**, **C# (P/Invoke)**, and **Rust**.
 
