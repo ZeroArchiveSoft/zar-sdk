@@ -18,8 +18,8 @@
 
 ## Why `libzar`?
 
-- **Maximum Compression or Speed:** Switch seamlessly between **LZMA2** (`16 MB – 1024 MB` dictionary) for archival density and multi-threaded **Zstd** for high-speed throughput.
-- **Solid-Stream Efficiency:** Groups files into continuous solid streams with configurable block boundaries to eliminate cross-file redundancy.
+- **Maximum Compression or Speed:** Switch seamlessly between **LZMA2** (`16 MB – 1024 MB` dictionary) for archival density and multi-threaded **Zstd** for blazing-fast throughput.
+- **Auto-Parallel Solid Streams:** Groups files into multi-threaded solid blocks (auto-balanced 64 MB blocks by default) for linear multi-core scaling while eliminating cross-file redundancy.
 - **Instant Metadata Listing:** Inspect archive contents, sizes, timestamps, and hashes in milliseconds via `zar_list_contents` without decompressing the payload.
 - **Built-In Security & Integrity:** End-to-end **AES-256-GCM** + **Argon2id** encryption for headers and payloads, **BLAKE3** verification on every extracted file, and path-traversal protection.
 - **Zero-Boilerplate C99 ABI:** Drop `libzar.dll` / `libzar.so` / `libzar.dylib` and `include/zar.h` into **C/C++**, **Python**, **Node.js**, **Go**, or **C#**.
@@ -128,14 +128,14 @@ All symbols are declared in [`include/zar.h`](include/zar.h).
 
 ```c
 typedef struct ZarOptions {
-    int32_t     algorithm;            /* ZAR_ALGO_LZMA2 (1) or ZAR_ALGO_ZSTD (2) */
-    int32_t     level;                /* Compression level: 1..9 (0 = default 6) */
+    int32_t     algorithm;            /* 0 = default (ZSTD), ZAR_ALGO_LZMA2 (1), ZAR_ALGO_ZSTD (2) */
+    int32_t     level;                /* Compression level: 1..9 (0 = default 5) */
     uint32_t    dict_size_mb;         /* Dictionary size in MB: 16..1024 (0 = default 16) */
     uint8_t     solid_mode;           /* 1 = solid compression, 0 = per-file */
     uint8_t     encrypt_header;       /* 1 = encrypt central directory, 0 = plaintext */
     uint8_t     encrypt_payload;      /* 1 = encrypt data blocks, 0 = plaintext */
     uint8_t     _reserved;            /* Must be 0 */
-    uint64_t    solid_block_size_mb;  /* Max MB per solid block (0 = single stream) */
+    uint64_t    solid_block_size_mb;  /* Max MB per solid block (0 = default/auto: 64MB parallel blocks) */
     const char* password;             /* UTF-8 password (NULL if unencrypted) */
 } ZarOptions;
 ```
